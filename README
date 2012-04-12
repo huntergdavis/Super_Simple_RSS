@@ -1,0 +1,37 @@
+SSRSS - Super Simple RSS Syndication Software
+
+About the software:
+Ok, so you're thinking to yourself "Man, I wish I had rss syndication on my website, but I'd bet anything it's difficult."  You'd be thinking wrong, it's just not so!  How simple is super simple you might ponder...  It's very simple.  Here's a basic rundown:
+
+NOTE: SSRSS will load in any rss/xml file that is has previously created.  It can try and load in any other rss file, but be warned!  This is not guaranteed to work.
+
+Walkthrough:
+
+Starting from scratch:
+1. Enter in the Channel Title into the Channel Title Box.
+2. Click on the Rss Options button.
+3. Enter in the Rss Options into the boxes and click ok.
+4. Enter in an entry title and entry text into the boxes.
+5. Click "add entry" and it will be added to the entry list on the lefthand side of the page.
+6. Enter a filename to save to in the filename box at the bottom of the screen.
+7. Click save and you have your rss file.
+
+Starting From a previously saved rss file
+1.  Click load rss file.
+2.  Choose the rss file and select ok.
+3.  You're set up.
+
+To Delete an entry:
+1.  highlight the entry in the entry box and click delete entry.
+
+Adding an html link to your entry:
+1.  Highlight the text you want to become an html link.
+2.  Click the create hyperlink button.
+3.  Enter the http://www.something.com address in.  Example: http://www.hunterdavis.com
+4.  Click ok and you're set up!
+
+
+Feel free to email me with any questions at support@hunterdavis.com
+
+
+ 

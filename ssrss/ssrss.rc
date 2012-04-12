@@ -1,0 +1,279 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ssrss.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ssrss.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ssrss"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ssrss Version 3.1",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) Hunter Davis 2005 email: hunter@hunterdavis.com",
+                    IDC_STATIC,13,35,215,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "For Help and Keyboard Shortcuts Please See Included HTML File",
+                    IDC_STATIC,15,48,206,8
+END
+
+IDD_SSRSS_DIALOG DIALOGEX 0, 0, 394, 295
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ssrss - Super Simple RSS"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_ENTRIES,12,19,139,209,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Delete Selected Entry",IDC_DELETE_ENTRY,13,235,111,18
+    DEFPUSHBUTTON   "Close File",ID_Close,3,258,50,14
+    DEFPUSHBUTTON   "Load Rss File",IDLoad,3,271,50,14
+    EDITTEXT        IDC_FILEBOX,55,271,164,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Save",ID_SAVE,220,271,50,14
+    EDITTEXT        IDC_RSS_ENTRY_TIME,168,24,152,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RSS_ENTRY_TITLE,168,46,152,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RSS_EDIT_MAIN,168,93,151,163,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "New Entry",IDC_NEW_ENTRY,321,54,67,22
+    PUSHBUTTON      "Add Entry",IDC_ADD_ENTRY,321,76,67,22
+    PUSHBUTTON      "Create Hyperlink",IDC_INSERT_LINK,321,139,67,36
+    PUSHBUTTON      "Clear",IDC_CLEAR,321,176,67,22
+    DEFPUSHBUTTON   "Rss Options",IDRSS,293,271,50,14
+    DEFPUSHBUTTON   "Exit",IDOK,344,271,50,14
+    PUSHBUTTON      "?",IDC_BUTTON1,372,7,16,13
+    LTEXT           "Entry:",IDC_STATIC_ENTRY_BOX,168,83,20,8
+    LTEXT           "Entries:",IDC_STATIC,12,10,24,9
+    LTEXT           "Rss Entry Title:",IDC_STATIC_ENTRY_TITLE,168,37,62,8
+    LTEXT           "Channel Title: ",IDC_STATIC_CHANNEL_TITLE,57,260,152,9
+    LTEXT           "Rss Entry Time:",IDC_STATIC_ENTRY_TIME,168,15,62,8
+    EDITTEXT        IDC_RSS_ENTRY_LINK,167,69,152,12,ES_AUTOHSCROLL
+    LTEXT           "Rss Entry Link:",IDC_STATIC_ENTRY_Link,168,60,62,8
+    PUSHBUTTON      "Update Selected",IDC_UPDATE_ENTRY,321,106,67,22
+    PUSHBUTTON      "Down",IDC_BUTTON_DOWN,131,244,31,10
+    PUSHBUTTON      "Up",IDC_BUTTON_UP,131,234,31,10
+END
+
+IDD_RSSOPTIONS DIALOG DISCARDABLE  0, 0, 186, 192
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RSS Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_RSS_TITLE,14,21,133,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RSS_TTL,14,48,133,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LINK,14,73,134,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DESC,14,100,134,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COPYRIGHT,14,127,134,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WEBMASTER,14,154,134,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,40,169,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,93,169,50,14
+    LTEXT           "Link:",IDC_STATIC,14,63,17,10
+    LTEXT           "Description:",IDC_STATIC,14,90,71,10
+    LTEXT           "Copyright:",IDC_STATIC,14,118,38,8
+    LTEXT           "Webmaster:",IDC_STATIC,14,146,48,8
+    LTEXT           "Rss Channel Title:",IDC_STATIC,14,11,62,8
+    LTEXT           "Rss Time To Live (ttl):",IDC_STATIC,14,38,82,8
+END
+
+IDC_HTTP DIALOG DISCARDABLE  0, 0, 300, 37
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter Http: Address"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,243,13,50,14
+    EDITTEXT        IDC_HTTP_EDIT,12,14,228,12,ES_AUTOHSCROLL
+    LTEXT           "Address:",IDC_STATIC,13,5,31,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "ssrss MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ssrss\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "OriginalFilename", "ssrss.EXE\0"
+            VALUE "ProductName", "ssrss Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_SSRSS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 388
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 288
+    END
+
+    IDD_RSSOPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDC_HTTP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 30
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About ssrss..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ssrss.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

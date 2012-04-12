@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ssrss - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Hunter\LOCALS~1\Temp\RSP1B2.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/ssrss.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Hunter\My Documents\ssrss25\ssrss\ssrssDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Hunter\LOCALS~1\Temp\RSP1B2.tmp" 
+Creating temporary file "C:\DOCUME~1\Hunter\LOCALS~1\Temp\RSP1B3.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/ssrss.pdb" /machine:I386 /out:"Release/ssrss.exe" 
+".\Release\httpaddressdlg.obj"
+".\Release\mainrsscontainer.obj"
+".\Release\rssclass.obj"
+".\Release\rssoptionsdlg.obj"
+".\Release\ssrss.obj"
+".\Release\ssrssDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\ssrss.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Hunter\LOCALS~1\Temp\RSP1B3.tmp"
+<h3>Output Window</h3>
+Compiling...
+ssrssDlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+ssrss.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

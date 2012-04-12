@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>Hunter Davis .com News</title>
+<link>http://www.hunterdavis.com</link>
+<description>All the hunterdavis.com news you could want</description>
+<copyright>2003 Hunter Davis</copyright>
+<lastBuildDate>Mon, 31 May 2004 10:49:42 -0700</lastBuildDate>
+<generator>Super Simple RSS</generator>
+<webMaster>hunter @ hunterdavis.com</webMaster>
+<item>
+<title>SSRSS 2.7</title>
+<link>http://www.hunterdavis.com</link>
+<description>
+SSRSS 2.7, now with new linking item feature!
+</description>
+<pubDate>Mon, 31 May 2004 10:19:09 -0700</pubDate>
+</item>
+</channel>
+</rss>
