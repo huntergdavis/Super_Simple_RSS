@@ -1,5 +1,7 @@
 SSRSS - Super Simple RSS Syndication Software
 
+This is the source code repository for SSRSS.  It's a ten year old source repository now, and is crufty.  The source should be easy to read and is pre-RSS or XML libraries i.e. imperfect hand-rolled reading.  This means it is only guaranteed to read RSS feeds it creates itself.  That said this is still a useful tool for the absolute beginner, and should provide an interesting source for folks interested in old windows software
+
 About the software:
 Ok, so you're thinking to yourself "Man, I wish I had rss syndication on my website, but I'd bet anything it's difficult."  You'd be thinking wrong, it's just not so!  How simple is super simple you might ponder...  It's very simple.  Here's a basic rundown:
 
